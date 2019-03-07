@@ -1,8 +1,10 @@
 <resources>
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="default_padding">16dp</dimen>
+    <dimen name="default_half_padding">8dp</dimen>
 
     <dimen name="radius_base">2dp</dimen>
+    <dimen name="radius_button">4dp</dimen>
 
     <!-- font size -->
     <dimen name="font_xlarge">19sp</dimen>

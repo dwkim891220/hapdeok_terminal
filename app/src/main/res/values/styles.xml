@@ -13,18 +13,23 @@
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
-    <style name="TextBaseWhite" parent="Widget.AppCompat.TextView">
+    <style name="Text_base" parent="Widget.AppCompat.TextView">
         <item name="android:letterSpacing">-0.05</item>
         <item name="android:textSize">@dimen/font_base</item>
+    </style>
+
+    <style name="Text_toolbar_label" parent="Text_base">
+        <item name="android:textColor">@color/black_light30</item>
+        <item name="android:textSize">@dimen/font_large</item>
+    </style>
+
+    <style name="Text_toolbar" parent="Text_base">
         <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/font_xlarge</item>
     </style>
 
-    <style name="TextNavHeaderTitle" parent="TextBaseWhite">
-        <item name="android:textSize">@dimen/font_large</item>
-    </style>
-
-    <style name="TextNavHeaderSub" parent="TextBaseWhite">
-        <item name="android:textSize">@dimen/font_large</item>
-        <item name="android:textColor">@color/black_light40</item>
+    <style name="Button_ChangeDestination" parent="Text_base">
+        <item name="android:textSize">@dimen/font_base</item>
+        <item name="android:textColor">@color/black_base</item>
     </style>
 </resources>
