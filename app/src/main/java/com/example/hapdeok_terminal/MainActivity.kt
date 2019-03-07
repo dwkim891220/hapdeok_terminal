@@ -1,9 +1,9 @@
 package com.example.hapdeok_terminal
 
 import android.os.Bundle
+import android.text.Editable
+import android.text.TextWatcher
 import kotlinx.android.synthetic.main.app_bar_main.*
-import kotlinx.android.synthetic.main.app_bar_main.view.*
-
 
 class MainActivity : BaseActivity(), MainActivityListener {
 
@@ -17,6 +17,32 @@ class MainActivity : BaseActivity(), MainActivityListener {
 
     private fun setLayouts(){
         setSupportActionBar(toolbar)
+
+        et_tb_search.run {
+            addTextChangedListener(
+                object : TextWatcher {
+                    override fun afterTextChanged(p0: Editable?) {}
+                    override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {}
+
+                    override fun onTextChanged(
+                        charSequence: CharSequence?,
+                        p1: Int,
+                        p2: Int,
+                        p3: Int
+                    ) {
+                        charSequence?.run {
+
+                        }
+                    }
+                }
+            )
+
+            setOnFocusChangeListener(
+                ({ _, focus ->
+
+                })
+            )
+        }
     }
 
     private fun replaceFragment(tag: String){
